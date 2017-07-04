@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Northside Youth Soccer League</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon-iphone.png">
+  <link rel="apple-touch-icon" href="app_icon60.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+  <link rel="shortcut icon" sizes="128x128" href="app_icon128.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+  <link rel="shortcut icon" sizes="196x196" href="images/nysl_logo.png">
+  <link rel="apple-touch-startup-image" href="/startup-image.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles/style.css" style="text/css">
+</head>
+
+<body>
+
+  <!-- cambiar header, podemos probar con flexbox -->
+  <header>
+    <img class="logo" src="images/nysl_logo.png">
+    <h1>Northside Youth Soccer League</h1>
+  </header>
+  <div class="icons">
+    <div class="glyphicon glyphicon-home" id="navIndex"></div>
+    <div class="glyphicon glyphicon-info-sign" id="navAbout"></div>
+    <div class="glyphicon glyphicon-calendar" id="navInfo"></div>
+    <div class="glyphicon glyphicon-envelope" id="navContact"></div>
+    <div class="glyphicon glyphicon-log-out" id="signoutButton"></div>
+    <div class="glyphicon glyphicon-user" id="navSign" onclick="document.getElementById('id01').style.display='block'"></div>
+
+  </div>
+  <div class="content">
+    <div class="home">
+      <div class="events">
+        <h2>Upcoming Events</h2>
+        <h3>August 4</h3>
+        <p class="indent">NYSL Fundraiser</p>
+
+        <h3>August 16</h3>
+        <p class="indent">Season Kick-off: Meet the Teams</p>
+
+        <h3>September 1</h3>
+        <p class="indent"> First Game of the Season (Check Game Schedule for details)</p>
+      </div>
+    </div>
+    <div id="about" class="events">
+      <h2>About NYSL</h2>
+      <h3>Mission</h3>
+      <p class="indent">To support young athletes living in Chicago's northside neighborhoods, who have an interest in learning and playing soccer, with opportunities to learn and practice skills related to the game of soccer, specifically those skills around team cooperation and good sportsmanship.</p>
+
+      <h3>Vision</h3>
+      <p class="indent">The Northside Youth Soccer League aspires to develop strong, well-rounded, and mindful athletes through the building of character, self-discipline, and leadership.</p>
+
+      <h3>General Information</h3>
+      <p class="indent">The Northside Youth Soccer League was established in 1996 to provide athletes residing in Chicago's northside neighborhoods an environment in which to learn and play soccer. To be a member of NYSL, you must be between the ages of 4 - 12 and reside in a Chicago northside neighborhood. NYSL is run by a small full-time staff, and relies on the generous volunteer time of parents and previous league members.</p>
+    </div>
+    <div id="registration" class="events">
+
+
+
+    </div>
+    <div id="info" class="events">
+      <h2>Game Information</h2>
+      <p class="announcement">*All games take place on Saturday</p>
+      <div class="container">
+        <div class="left">
+          <h2>Matches</h2>
+          <table class="table table-striped">
+            <thead>
+              <th>Home</th>
+              <th>Away</th>
+              <th>Details</th>
+            </thead>
+            <tbody id="matches">
+
+            </tbody>
+          </table>
+        </div>
+        <h2>Details</h2>
+        <div class="right">
+
+          <div id="match">
+            <div class="details">
+
+              <span>Click some match to see info...</span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="rules" class="events">
+
+    </div>
+
+    <div class="signUp">
+
+
+      <!-- The Modal -->
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <img src="images/app_avatar.png" alt="Avatar" class="avatar">
+          </div>
+          <div class="fieldContainer">
+            <div class="username">
+              <label><b>Email</b></label>
+              <input type="text" placeholder="Enter Username" id="email" name="uname" required>
+            </div>
+            <div class="password">
+              <label><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" id="password" name="psw" required>
+            </div>
+          </div>
+
+          <div class="buttonsContainer" style="background-color:#f1f1f1">
+            <div class="loginButtons">
+              <button type="button" class="btn-success btn-lg" id="signupButton">Login</button>
+              <button type="button" class="btn-danger btn-lg" type="button" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="contact" class="events">
+      <h2>Contact</h2>
+      <p>Please email us at <a href="mailto:nysl@chisoccer.org">nysl@chisoccer.org</a></p>
+
+      <p>We will reply to your email as soon as we can.</p>
+    </div>
+  </div>
+
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCVreLP5FNzMkwjsPW_5KtnqsU0gomARZU",
+    authDomain: "nyslwebapp-fe5ec.firebaseapp.com",
+    databaseURL: "https://nyslwebapp-fe5ec.firebaseio.com",
+    projectId: "nyslwebapp-fe5ec",
+    storageBucket: "nyslwebapp-fe5ec.appspot.com",
+    messagingSenderId: "95779896529"
+  };
+  firebase.initializeApp(config);
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+
+</html>

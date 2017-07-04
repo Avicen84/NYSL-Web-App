@@ -1,0 +1,244 @@
+* {}
+
+body {
+  background: rgba(0, 128, 0, 0.13);
+}
+
+header {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+h1 {
+  font-size: 22px;
+  width: auto;
+  height: 50px;
+  margin-left: 10px;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.events {
+  position: relative;
+  padding: 1em;
+  width: auto;
+  text-align: justify;
+}
+
+.escudo img {
+  width: 100px;
+  height: 100px;
+}
+
+.escudo {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap
+}
+
+.name {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  text-align: center;
+}
+
+.escudos {
+  margin-top: 20px;
+  display: flex;
+}
+
+.vs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.glyphicon {
+  font-size: 30px;
+  color: rgba(1, 88, 1, 0.86);
+}
+
+#buttons {
+  width: 100px;
+  
+  border: none;
+}
+
+.divButtons {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+iframe {
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+}
+
+.imgcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+#loginButton {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.password {
+  margin-bottom: 25px;
+}
+
+.fieldContainer {
+  width: 250px;;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 10px;
+}
+
+input {
+  width: 250px;
+}
+
+.modal-backdrop {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #000;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto;
+  /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+/* Close button on hover */
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
